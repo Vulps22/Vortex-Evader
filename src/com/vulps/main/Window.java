@@ -1,5 +1,7 @@
 package com.vulps.main;
 
+import com.vulps.main.Game.Game;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.Serial;

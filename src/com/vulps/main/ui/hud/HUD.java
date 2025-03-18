@@ -1,4 +1,6 @@
-package com.vulps.main;
+package com.vulps.main.ui.hud;
+
+import com.vulps.main.Game.Game;
 
 import java.awt.*;
 

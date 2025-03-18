@@ -1,8 +1,15 @@
-package com.vulps.main;
+package com.vulps.main.Game.character;
+
+import com.vulps.main.Game.Game;
+import com.vulps.main.Game.abstractObject.Character;
+import com.vulps.main.Game.abstractObject.GameObject;
+import com.vulps.main.Handler;
+import com.vulps.main.ID;
+import com.vulps.main.Game.entities.Trail;
 
 import java.awt.*;
 
-public class Player extends Character{
+public class Player extends Character {
 
     private final Handler handler;
 

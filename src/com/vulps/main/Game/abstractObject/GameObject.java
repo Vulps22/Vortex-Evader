@@ -1,4 +1,7 @@
-package com.vulps.main;
+package com.vulps.main.Game.abstractObject;
+
+import com.vulps.main.Handler;
+import com.vulps.main.ID;
 
 import java.awt.*;
 
@@ -39,9 +42,9 @@ public abstract class GameObject {
     }
 
     protected void checkCollision(){
-        for (int i = 0; i < handler.object.size(); i++) {
+        for (int i = 0; i < handler.getObjects().size(); i++) {
 
-            GameObject tempObject = handler.object.get(i);
+            GameObject tempObject = handler.getObjects().get(i);
             if(tempObject.isCollisionEnabled()) {
                 if (getBounds().intersects(tempObject.getBounds())) {
                     onCollision(tempObject);
