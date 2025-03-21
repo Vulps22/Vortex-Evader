@@ -1,9 +1,14 @@
-package com.vulps.main;
+package com.vulps.main.Game.entities;
+
+import com.vulps.main.Game.abstractObject.GameObject;
+import com.vulps.main.Game.character.BasicEnemy;
+import com.vulps.main.Handler;
+import com.vulps.main.ID;
 
 import java.awt.*;
 import java.util.Random;
 
-public class Wormhole extends GameObject{
+public class Wormhole extends GameObject {
 
     private int delta = 0;
     private int lifespan = 350;
@@ -50,10 +55,10 @@ public class Wormhole extends GameObject{
 
     @Override
     protected void checkCollision() {
-        for (int i = 0; i < handler.object.size(); i++) {
+        for (int i = 0; i < handler.getObjects().size(); i++) {
 
-            GameObject tempObject = handler.object.get(i);
-            if(tempObject.id == ID.Wormhole) {
+            GameObject tempObject = handler.getObjects().get(i);
+            if(tempObject.getId() == ID.Wormhole) {
                 if (getBounds().intersects(tempObject.getBounds())) {
                     onCollision(tempObject);
                 }
@@ -63,7 +68,7 @@ public class Wormhole extends GameObject{
 
     @Override
     protected void onCollision(GameObject object) {
-        if(object.id == ID.Wormhole){
+        if(object.getId() == ID.Wormhole){
 
             Random r = new Random();
             x += 150;

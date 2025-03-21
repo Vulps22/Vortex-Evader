@@ -1,8 +1,11 @@
-package com.vulps.main;
+package com.vulps.main.Game.abstractObject;
+
+import com.vulps.main.Handler;
+import com.vulps.main.ID;
 
 import java.awt.*;
 
-public abstract class Character extends GameObject{
+public abstract class Character extends GameObject {
 
     protected Color color;
     public Character(int x, int y, int WIDTH, int HEIGHT, Color color, ID id, Handler handler, Boolean collide) {

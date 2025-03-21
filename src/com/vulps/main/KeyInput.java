@@ -1,5 +1,8 @@
 package com.vulps.main;
 
+import com.vulps.main.Game.Game;
+import com.vulps.main.Game.abstractObject.GameObject;
+
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
@@ -51,26 +54,26 @@ public class KeyInput extends KeyAdapter {
     private void stopXPos(){
         GameObject player = handler.getObject(ID.Player);
 
-        if(player.velX > 0) player.setVelX(0);
+        if(player.getVelX() > 0) player.setVelX(0);
 
     }
     private void stopXNeg(){
         GameObject player = handler.getObject(ID.Player);
 
-        if(player.velX < 0) player.setVelX(0);
+        if(player.getVelX() < 0) player.setVelX(0);
 
     }
 
     private void stopYPos(){
         GameObject player = handler.getObject(ID.Player);
 
-        if(player.velY > 0) player.setVelY(0);
+        if(player.getVelY() > 0) player.setVelY(0);
 
     }
     private void stopYNeg(){
         GameObject player = handler.getObject(ID.Player);
 
-        if(player.velY < 0) player.setVelY(0);
+        if(player.getVelY() < 0) player.setVelY(0);
 
     }
 }

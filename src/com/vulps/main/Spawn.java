@@ -1,5 +1,11 @@
 package com.vulps.main;
 
+import com.vulps.main.Game.Game;
+import com.vulps.main.Game.abstractObject.GameObject;
+import com.vulps.main.Game.character.BasicEnemy;
+import com.vulps.main.Game.entities.Wormhole;
+
+
 import java.util.Random;
 
 public class Spawn {
@@ -17,7 +23,7 @@ public class Spawn {
             scoreKeep++;
         }else{
             GameObject object = handler.getObject(ID.Player);
-            if(object != null) handler.addObject(new BasicEnemy(object.x, object.y, ID.BasicEnemy, handler));
+            if(object != null) handler.addObject(new BasicEnemy(object.getX(), object.getY(), ID.BasicEnemy, handler));
 
             handler.removeObject(object);
         }

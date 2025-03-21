@@ -1,4 +1,4 @@
-package com.vulps.main;
+package com.vulps.main.Game;
 
 public class Level {
 

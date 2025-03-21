@@ -1,5 +1,8 @@
 package com.vulps.main;
 
+import com.vulps.main.Game.Game;
+import com.vulps.main.ui.menu.MenuItem;
+
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -15,7 +18,8 @@ public class MouseInput implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        if (game.menu.visible && game.menu.playBounds.contains(e.getPoint())) {
+        MenuItem item = game.menu.getHoveredItem(e);
+        if (game.menu.visible && item != null) {
             // Handle the click action for the "PLAY" text
             game.restartGame();
             game.menu.visible = false;
@@ -34,16 +38,16 @@ public class MouseInput implements MouseListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        if (game.menu.visible && game.menu.playBounds.contains(e.getX(), e.getY())) {
+        //if (game.menu.visible && game.menu.playBounds.contains(e.getX(), e.getY())) {
 
-            game.menu.isMouseOverPlay = true;
-        }
+       //     game.menu.isMouseOverPlay = true;
+       // }
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        if (game.menu.visible) {
-            game.menu.isMouseOverPlay = false;
-        }
+        //if (game.menu.visible) {
+        //    game.menu.isMouseOverPlay = false;
+       // }
     }
 }

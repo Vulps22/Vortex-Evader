@@ -1,4 +1,9 @@
-package com.vulps.main;
+package com.vulps.main.Game;
+
+import com.vulps.main.*;
+import com.vulps.main.Game.character.Player;
+import com.vulps.main.Window;
+import com.vulps.main.ui.menu.Menu;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -83,7 +88,7 @@ public class Game extends Canvas implements Runnable {
         if(menu.visible){
             menu.tick();
             if(handler.level.getLevel() > 5) handler.level.setLevel(5);
-            if(handler.object.size() > 1000) handler.object.clear();
+            if(handler.getObjects().size() > 1000) handler.getObjects().clear();
         }
         handler.tick();
         spawner.tick();

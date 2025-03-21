@@ -1,9 +1,15 @@
-package com.vulps.main;
+package com.vulps.main.Game.character;
+
+import com.vulps.main.*;
+import com.vulps.main.Game.Game;
+import com.vulps.main.Game.abstractObject.Character;
+import com.vulps.main.Game.abstractObject.GameObject;
+import com.vulps.main.Game.entities.Trail;
 
 import java.awt.*;
 import java.util.Random;
 
-public class BasicEnemy extends Character{
+public class BasicEnemy extends Character {
 
     private int LIFE = 100;
 

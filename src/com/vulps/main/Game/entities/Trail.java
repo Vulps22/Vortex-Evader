@@ -1,15 +1,19 @@
-package com.vulps.main;
+package com.vulps.main.Game.entities;
+
+import com.vulps.main.Game.abstractObject.GameObject;
+import com.vulps.main.Handler;
+import com.vulps.main.ID;
 
 import java.awt.*;
 
-public class Trail extends GameObject{
+public class Trail extends GameObject {
 
     private float alpha = 1;
     private final Color color;
     private final int WIDTH, HEIGHT;
     private final float LIFE;
 
-    public Trail(int x, int y, ID id, int width, int height, float life,  Color color, Handler handler) {
+    public Trail(int x, int y, ID id, int width, int height, float life, Color color, Handler handler) {
         super(x, y, width, height, id, handler, false);
         this.color = color;
         this.LIFE = life;
