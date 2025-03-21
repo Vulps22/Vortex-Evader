@@ -1,4 +1,6 @@
-# ILIMIB (If you Like It, Make It Better)
+# ILIMIB (If you Like It, Make It Better) V1.0.0
+
+Original License: https://github.com/Vulps22/ILIMIB/blob/main/ILIMIB.md
 
 ## Purpose
 The purpose of this code-available license is to provide a mechanism for Software authors (AKA Project Authors, 'Original Author' for the purposes of this licence) with a mechanism to permit 3rd party contributors to make changes to the project without permitting them to take any part of the project for themselves.
@@ -50,10 +52,20 @@ You may not sublicense, transfer, or attempt to relicense this Software under an
 
 **As far as the law allows, the Software and any associated assets are provided as is without any warranty or guarantees, and the Original Author will not be liable for any damages arising out of these terms or the use or nature of the Software under any kind of legal claim**
 
+## Notices
+These terms only apply by default to the Software and it's Source Code. The Original Author may provide a medium for distribution of the Software. If they do:
+- The core features of this software **must** be provided free of charge for non-commercial use
+- Any further restrictions must be given in writing at the point where the User may create a copy of the packaged Software.
+- Any restrictions not explicitly defined within this license or at the point where the user may create a copy of the packaged software are deemed not to apply to The User's copy of the software
+
+Additionally, **This document is considered invalid if the URL to the Original License is not provided at the top of this document**
+
 ## Definitions
 
 **Original Author** is the individual or entity offering these terms, the **Source Code** is the code made available by these terms, and the **Software** is the Software the Original Author makes available under these terms.
 
-**You** are the individual or entity agreeing to these terms
+**You** or **The User** are the individual or entity agreeing to these terms
 
 **use** means anything you do with the Software, it's Source Code, or any assets associated with either the Software or it's Source Code
+
+This version of ILIMIB became Effective on the date: 21/03/2025
