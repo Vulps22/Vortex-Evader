@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Run CodeKeepers Review Request Action
-        uses: Vulps22/review-request-action@v1.0.0
+      - name: CodeKeepers Review Request Action
+        uses: Vulps22/announce-code-review@v1.0.0
         with:
           api_token: ${{ secrets.CK_API_SECRET }}
