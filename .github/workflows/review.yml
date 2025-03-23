@@ -1,0 +1,17 @@
+name: CodeKeepers Review Request
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  review_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run CodeKeepers Review Request Action
+        uses: CodeKeepers/review-request-action@v1.0.0-pre
+        with:
+          api_token: ${{ secrets.CK_API_TOKEN }}
