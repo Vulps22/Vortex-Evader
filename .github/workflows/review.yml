@@ -14,4 +14,4 @@ jobs:
       - name: Run CodeKeepers Review Request Action
         uses: CodeKeepers/review-request-action@v1.0.0-pre
         with:
-          api_token: ${{ secrets.CK_API_TOKEN }}
+          api_token: ${{ secrets.CK_API_SECRET }}
